@@ -26,11 +26,34 @@
 	└── 12353022_陈胜杰_Cache.pdf		详细的试验实验报告
 
 ## 内容
-<img src="/block diagram.png" width="800px">
+#### 　　FreeARM7系统结构
+<center><img src="/FreeARM7_Architecture.png" width="500px"></center>
+#### 　　编译器工作流程简图
+<center><img src="/Compiler_routine.png" width="500px"></center>
+#### 　　代码流图
+<center><img src="/Flow_Chart.png" width="800px"></center>
+#### 　　Cache映射规则
++ 直接映射规则，即对于内存中的任何一个数据，在 Cache 中有且只有一个块与之对应。实现中即是，对于一个内存地址，只对应于一个 Cache 索引。
+<center><img src="/直接相联映射.png" width="500px"></center>
++ 全相联，对于内存中的一个地址，对应于 Cache 中的任何一个位置，类似于将内存中的数据直接搬入 Cache，而 Cache 作为一个中转站。
+<center><img src="/直接相联映射.png" width="500px"></center>
++ 组相联映射，结合了上述两种映射规则，一个内存地址索引到 Cache 的一个组，这里是直接映射；而具体到一个组的哪一个块则采用全相联的方式。
+<center><img src="/二路组相联映射.png" width="500px"></center>
++ 直接映射规则能够高效进行内存与 Cache 间数据的转移以及地址的转换， 而全相联则能提供一个较高的命中率。组相联映射，折中了二者的优点。
+#### 　　Cache替换策略
+　　当 Cache 缺失，而缺失所在块(组)存在数据，我们需要一定策略选择一个替换块来存放我们从主存中载入的数据，以使我们在未来的指令操作中，竟可能减 Cache 缺失的可能。 
+ 
++ FIFO，先到先置换算法，在一开始我们实现的直接相连映射下的覆盖方式类似于这种方法；
++ 随机算法，即随机置换一个块；
++ 最近最少使用算法(LRU)，这一算法运用了程序时间局部性的原理，在置换的时候，选择组中最近不怎么使用的块，将其置换，可以竟可能达到满意的命中率。
+#### 　　D-Cache写策略
+　　对于 D_Cache 的写操作，有两种比较常见的策略：
 
-+ 指令集设计，参考MIPS指令集。  
-+ Datapath设计，参考上图，分模块实现。  
-+ P(rogram)C(ounter)的计算，主要涉及跳转指令的处理。   
-+ Instruction Memory和Data Memory的模拟仿真。
++ 写直达法，即向 D-Cache 写入数据时，直接将数据写入主存， 同时采用写不分配法， 写数据的时候不将写缺失块载入 Cache， 等到读缺失时再将其载入；
++ 写回法，向 D-Cache 写入数据时，采用写分配法，为其在 Cache 中分配空间，直接在 Cache 中写入数据，当其需要被置换时，再将其写入主存；
++ 这两种方法都能保持 Cache 与主存的一致性。
 
-## 使用说明  
+## 使用说明
++ 使用ISE软件打开 **`arm_clear_cache`** 工程
++ 使用 **`Cache_v?`** 文件夹下文件替换工程中相应文件
++ 将 **Test** 文件夹下各测试用例对应的 **.mif** 文件内容写入 **`arm_clear_cache`** 工程下的 **program.mif** 文件，对个测试用例进行测试  
