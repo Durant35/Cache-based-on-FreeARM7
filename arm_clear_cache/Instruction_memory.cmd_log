@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "G:/quartus/FreeARM7/DATE20140419/arm_clear/Instruction_memory.xst" -ofn "G:/quartus/FreeARM7/DATE20140419/arm_clear/Instruction_memory.syr" 

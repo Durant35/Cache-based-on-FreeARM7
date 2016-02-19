@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "G:/quartus/FreeARM7/DATE20140419/arm_clear/stimulus.xst" -ofn "G:/quartus/FreeARM7/DATE20140419/arm_clear/stimulus.syr" 
+xst -intstyle ise -ifn "G:/quartus/FreeARM7/DATE20140419/arm_clear/stimulus.xst" -ofn "G:/quartus/FreeARM7/DATE20140419/arm_clear/stimulus.syr" 

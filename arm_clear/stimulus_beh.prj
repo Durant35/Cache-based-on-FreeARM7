@@ -1,0 +1,6 @@
+verilog work "altera_mf.v"
+verilog work "Instruction_memory.v"
+verilog work "Data_memory.v"
+verilog work "arm.v"
+verilog work "stimulus.v"
+verilog work "D:/Xilinx/12.3/ISE_DS/ISE//verilog/src/glbl.v"

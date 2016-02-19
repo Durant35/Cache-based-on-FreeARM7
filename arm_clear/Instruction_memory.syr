@@ -1,0 +1,234 @@
+Release 12.3 - xst M.70d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Instruction_memory.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Instruction_memory.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Instruction_memory"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Instruction_memory
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file \"\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v\" into library work
+Parsing module <lcell>.
+Parsing module <ALTERA_MF_MEMORY_INITIALIZATION>.
+Parsing module <ALTERA_MF_HINT_EVALUATION>.
+Parsing module <ALTERA_DEVICE_FAMILIES>.
+Parsing module <dffp>.
+Parsing module <pll_iobuf>.
+Parsing module <stx_m_cntr>.
+Parsing module <stx_n_cntr>.
+Parsing module <stx_scale_cntr>.
+Parsing module <MF_pll_reg>.
+Parsing module <MF_stratix_pll>.
+WARNING:HDLCompiler:224 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 3678: Assignment to input tap_phase
+Parsing module <arm_m_cntr>.
+Parsing module <arm_n_cntr>.
+Parsing module <arm_scale_cntr>.
+Parsing module <MF_stratixii_pll>.
+WARNING:HDLCompiler:224 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 7605: Assignment to input tap_phase
+Parsing module <ttn_m_cntr>.
+Parsing module <ttn_n_cntr>.
+Parsing module <ttn_scale_cntr>.
+Parsing module <MF_stratixiii_pll>.
+WARNING:HDLCompiler:224 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 11724: Assignment to input tap_phase
+Parsing module <cda_m_cntr>.
+Parsing module <cda_n_cntr>.
+Parsing module <cda_scale_cntr>.
+Parsing module <MF_cycloneiii_pll>.
+WARNING:HDLCompiler:224 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 15710: Assignment to input tap_phase
+Parsing module <MF_cycloneiiigl_m_cntr>.
+Parsing module <MF_cycloneiiigl_n_cntr>.
+Parsing module <MF_cycloneiiigl_scale_cntr>.
+Parsing module <cycloneiiigl_post_divider>.
+Parsing module <MF_cycloneiiigl_pll>.
+WARNING:HDLCompiler:224 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 19414: Assignment to input tap_phase
+Parsing module <altpll>.
+Parsing module <altlvds_rx>.
+Parsing module <stratix_lvds_rx>.
+Parsing module <stratixgx_dpa_lvds_rx>.
+Parsing module <stratixii_lvds_rx>.
+Parsing module <flexible_lvds_rx>.
+Parsing module <stratixiii_lvds_rx>.
+Parsing module <stratixiii_lvds_rx_channel>.
+Parsing module <stratixiii_lvds_rx_dpa>.
+Parsing module <altlvds_tx>.
+Parsing module <stratixv_local_clk_divider>.
+Parsing module <stratix_tx_outclk>.
+Parsing module <stratixii_tx_outclk>.
+Parsing module <flexible_lvds_tx>.
+Parsing module <dcfifo_dffpipe>.
+Parsing module <dcfifo_fefifo>.
+Parsing module <dcfifo_async>.
+Parsing module <dcfifo_sync>.
+Parsing module <dcfifo_low_latency>.
+Parsing module <dcfifo_mixed_widths>.
+Parsing module <dcfifo>.
+Parsing module <altaccumulate>.
+Parsing module <altmult_accum>.
+Parsing module <altmult_add>.
+Parsing module <altfp_mult>.
+Parsing module <altsqrt>.
+Parsing module <altclklock>.
+Parsing module <altddio_in>.
+Parsing module <altddio_out>.
+Parsing module <altddio_bidir>.
+Parsing module <altdpram>.
+Parsing module <altsyncram>.
+Parsing module <alt3pram>.
+Parsing module <parallel_add>.
+Parsing module <scfifo>.
+Parsing module <altshift_taps>.
+Parsing module <a_graycounter>.
+Parsing module <altsquare>.
+Parsing module <altera_std_synchronizer>.
+Parsing module <altera_std_synchronizer_bundle>.
+Parsing module <alt_cal>.
+Parsing module <alt_cal_mm>.
+Parsing module <alt_cal_c3gxb>.
+Parsing module <alt_cal_sv>.
+Parsing module <alt_aeq_s4>.
+Parsing module <alt_eyemon>.
+Parsing module <alt_dfe>.
+Parsing module <signal_gen>.
+Parsing module <jtag_tap_controller>.
+Parsing module <dummy_hub>.
+Parsing module <sld_virtual_jtag>.
+Parsing module <sld_signaltap>.
+Parsing module <altstratixii_oct>.
+Parsing module <altparallel_flash_loader>.
+Parsing module <altserial_flash_loader>.
+Parsing module <sld_virtual_jtag_basic>.
+Parsing module <altsource_probe>.
+Analyzing Verilog file \"\quartus\FreeARM7\DATE20140419\arm_clear\Instruction_memory.v\" into library work
+Parsing module <Instruction_memory>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Instruction_memory>.
+
+Elaborating module <altsyncram(address_aclr_a="NONE",clock_enable_input_a="NORMAL",clock_enable_output_a="BYPASS",init_file="program.mif",intended_device_family="Cyclone IV E",lpm_hint="ENABLE_RUNTIME_MOD=NO",lpm_type="altsyncram",numwords_a=64,operation_mode="ROM",outdata_aclr_a="NONE",outdata_reg_a="UNREGISTERED",widthad_a=6,width_a=32,width_byteena_a=1)>.
+ERROR:HDLCompiler:78 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 44519: tri0 is not yet supported for synthesis
+ERROR:HDLCompiler:78 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 44520: tri0 is not yet supported for synthesis
+ERROR:HDLCompiler:78 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 44521: tri1 is not yet supported for synthesis
+ERROR:HDLCompiler:78 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 44522: tri1 is not yet supported for synthesis
+ERROR:HDLCompiler:78 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 44523: tri1 is not yet supported for synthesis
+ERROR:HDLCompiler:78 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 44524: tri1 is not yet supported for synthesis
+ERROR:HDLCompiler:78 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 44525: tri1 is not yet supported for synthesis
+ERROR:HDLCompiler:78 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 44526: tri1 is not yet supported for synthesis
+ERROR:HDLCompiler:78 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 44527: tri1 is not yet supported for synthesis
+ERROR:HDLCompiler:78 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 44528: tri0 is not yet supported for synthesis
+ERROR:HDLCompiler:78 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 44529: tri0 is not yet supported for synthesis
+ERROR:HDLCompiler:78 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 44530: tri0 is not yet supported for synthesis
+ERROR:HDLCompiler:78 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 44531: tri0 is not yet supported for synthesis
+ERROR:HDLCompiler:78 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 44532: tri1 is not yet supported for synthesis
+ERROR:HDLCompiler:78 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 44533: tri1 is not yet supported for synthesis
+Module altsyncram remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "\quartus\FreeARM7\DATE20140419\arm_clear\altera_mf.v" Line 44162: Empty module <altsyncram(address_aclr_a="NONE",clock_enable_input_a="NORMAL",clock_enable_output_a="BYPASS",init_file="program.mif",intended_device_family="Cyclone IV E",lpm_hint="ENABLE_RUNTIME_MOD=NO",lpm_type="altsyncram",numwords_a=64,operation_mode="ROM",outdata_aclr_a="NONE",outdata_reg_a="UNREGISTERED",widthad_a=6,width_a=32,width_byteena_a=1)> remains a black box.
+--> 
+
+Total memory usage is 221464 kilobytes
+
+Number of errors   :   15 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

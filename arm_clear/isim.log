@@ -1,0 +1,17 @@
+ISim log file
+Running: D:\SharedFolder\EX4\arm_clear\stimulus_isim_beh.exe -gui -tclbatch isim.cmd -wdb D:/SharedFolder/EX4/arm_clear/stimulus_isim_beh.wdb 
+ISim M.70d (signature 0x16fbe694)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+WARNING: For instance stimulus/u1/, width 6 of formal port address is not equal to width 30 of actual.
+WARNING: For instance stimulus/u2/, width 6 of formal port address is not equal to width 30 of actual.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

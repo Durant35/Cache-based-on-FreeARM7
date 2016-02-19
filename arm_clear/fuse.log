@@ -1,0 +1,30 @@
+Running: D:\Xilinx\12.3\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/SharedFolder/EX4/arm_clear/stimulus_isim_beh.exe -prj D:/SharedFolder/EX4/arm_clear/stimulus_beh.prj work.stimulus work.glbl 
+ISim M.70d (signature 0x16fbe694)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file \"D:/SharedFolder/EX4/arm_clear/altera_mf.v\" into library work
+Analyzing Verilog file \"D:/SharedFolder/EX4/arm_clear/Instruction_memory.v\" into library work
+Analyzing Verilog file \"D:/SharedFolder/EX4/arm_clear/Data_memory.v\" into library work
+Analyzing Verilog file \"D:/SharedFolder/EX4/arm_clear/arm.v\" into library work
+Analyzing Verilog file \"D:/SharedFolder/EX4/arm_clear/stimulus.v\" into library work
+Analyzing Verilog file \"D:/Xilinx/12.3/ISE_DS/ISE//verilog/src/glbl.v\" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "D:/SharedFolder/EX4/arm_clear/stimulus.v" Line 69: Size mismatch in connection of port <address>. Formal port size is 6-bit while actual signal size is 30-bit.
+WARNING:HDLCompiler:189 - "D:/SharedFolder/EX4/arm_clear/stimulus.v" Line 76: Size mismatch in connection of port <address>. Formal port size is 6-bit while actual signal size is 30-bit.
+Completed static elaboration
+Compiling module arm
+Compiling module ALTERA_DEVICE_FAMILIES
+Compiling module ALTERA_MF_MEMORY_INITIALIZATION
+Compiling module altsyncram(width_a=32,widthad_a=...
+Compiling module Instruction_memory
+Compiling module altsyncram(width_a=32,widthad_a=...
+Compiling module Data_memory
+Compiling module stimulus
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 9 Verilog Units
+Built simulation executable D:/SharedFolder/EX4/arm_clear/stimulus_isim_beh.exe
+Fuse Memory Usage: 61692 KB
+Fuse CPU Usage: 2167 ms

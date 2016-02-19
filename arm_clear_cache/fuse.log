@@ -1,0 +1,21 @@
+Running: C:\Xilinx\12.3\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o J:/MIE/Computer Organization and Design/Project/arm_clear_cache/arm_clear_cache/Instruction_memory_isim_beh.exe -prj J:/MIE/Computer Organization and Design/Project/arm_clear_cache/arm_clear_cache/Instruction_memory_beh.prj work.Instruction_memory work.glbl 
+ISim M.70d (signature 0x16fbe694)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file \"J:/MIE/Computer Organization and Design/Project/arm_clear_cache/arm_clear_cache/altera_mf.v\" into library work
+Analyzing Verilog file \"J:/MIE/Computer Organization and Design/Project/arm_clear_cache/arm_clear_cache/Instruction_memory.v\" into library work
+Analyzing Verilog file \"C:/Xilinx/12.3/ISE_DS/ISE//verilog/src/glbl.v\" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module ALTERA_DEVICE_FAMILIES
+Compiling module ALTERA_MF_MEMORY_INITIALIZATION
+Compiling module altsyncram(width_a=32,widthad_a=...
+Compiling module Instruction_memory
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 Verilog Units
+Built simulation executable J:/MIE/Computer Organization and Design/Project/arm_clear_cache/arm_clear_cache/Instruction_memory_isim_beh.exe
+Fuse Memory Usage: 58860 KB
+Fuse CPU Usage: 4429 ms

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\quartus\FreeARM7\DATE20140419\arm_clear\arm.v" Line 338: Assignment to <arg fmt="%s" index="1">code_is_mrs</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\quartus\FreeARM7\DATE20140419\arm_clear\arm.v" Line 348: Assignment to <arg fmt="%s" index="1">code_is_swi</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">go_fmt_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">arm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">go_fmt_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">arm</arg>&gt;.
+</msg>
+
+</messages>
+

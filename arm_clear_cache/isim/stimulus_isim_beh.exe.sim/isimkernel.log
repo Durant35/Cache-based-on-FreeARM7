@@ -1,0 +1,10 @@
+Command line:
+   stimulus_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49173
+
+Tue May 20 15:34:05 2014
+
+
+ Elaboration Time: 0.1716 sec

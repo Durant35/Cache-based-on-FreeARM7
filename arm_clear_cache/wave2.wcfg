@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/lenovo/Desktop/arm_clear_cache/stimulus_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="stimulus" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/stimulus/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/stimulus/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/stimulus/u0/cpu_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cpu_en</obj_property>
+      <obj_property name="ObjectShortName">cpu_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/stimulus/rom_abort" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rom_abort</obj_property>
+      <obj_property name="ObjectShortName">rom_abort</obj_property>
+   </wvobject>
+   <wvobject fp_name="group15" type="group">
+      <obj_property name="label">ROM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/stimulus/rom_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rom_en</obj_property>
+         <obj_property name="ObjectShortName">rom_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/rom_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rom_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rom_data[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/rom_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rom_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rom_addr[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group16" type="group">
+      <obj_property name="label">RAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/stimulus/ram_wen" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ram_wen</obj_property>
+         <obj_property name="ObjectShortName">ram_wen</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/ram_cen" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ram_cen</obj_property>
+         <obj_property name="ObjectShortName">ram_cen</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/ram_wdata" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ram_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_wdata[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/ram_rdata" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ram_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_rdata[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/ram_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ram_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_addr[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/u2/address" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">address[5:0]</obj_property>
+         <obj_property name="ObjectShortName">address[5:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group33" type="group">
+      <obj_property name="label">r0-r15</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/stimulus/u0/r0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">r0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r0[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/u0/r1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">r1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r1[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/u0/r2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">r2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r2[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/u0/r3" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">r3[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r3[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/u0/r4" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">r4[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r4[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/u0/r5" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">r5[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r5[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/u0/r6" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">r6[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r6[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/u0/r7" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">r7[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r7[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/u0/r8" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">r8[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r8[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/u0/r9" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">r9[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r9[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/u0/ra" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ra[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ra[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/u0/rb" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rb[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rb[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/u0/rc" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rc[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/u0/rd" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rd[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rd[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/u0/re" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">re[31:0]</obj_property>
+         <obj_property name="ObjectShortName">re[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/u0/rf" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rf[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rf[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="group290" type="group">
+         <obj_property name="label">flag</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/stimulus/u0/cpsr_c" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">cpsr_c</obj_property>
+            <obj_property name="ObjectShortName">cpsr_c</obj_property>
+         </wvobject>
+         <wvobject fp_name="/stimulus/u0/cpsr_n" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">cpsr_n</obj_property>
+            <obj_property name="ObjectShortName">cpsr_n</obj_property>
+         </wvobject>
+         <wvobject fp_name="/stimulus/u0/cpsr_z" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">cpsr_z</obj_property>
+            <obj_property name="ObjectShortName">cpsr_z</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group245" type="group">
+      <obj_property name="label">pipeline</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group249" type="group">
+         <obj_property name="label">1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/stimulus/rom_en" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">rom_en</obj_property>
+            <obj_property name="ObjectShortName">rom_en</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#ffa500</obj_property>
+         </wvobject>
+         <wvobject fp_name="/stimulus/rom_addr" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">rom_addr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">rom_addr[31:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#ffa500</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group287" type="group">
+         <obj_property name="label">2</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/stimulus/u0/code_flag" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">code_flag</obj_property>
+            <obj_property name="ObjectShortName">code_flag</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+         </wvobject>
+         <wvobject fp_name="/stimulus/u0/code" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">code[31:0]</obj_property>
+            <obj_property name="ObjectShortName">code[31:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group286" type="group">
+         <obj_property name="label">3</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/stimulus/u0/cmd_flag" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">cmd_flag</obj_property>
+            <obj_property name="ObjectShortName">cmd_flag</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#ffff00</obj_property>
+         </wvobject>
+         <wvobject fp_name="/stimulus/u0/cmd" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">cmd[31:0]</obj_property>
+            <obj_property name="ObjectShortName">cmd[31:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#ffff00</obj_property>
+         </wvobject>
+         <wvobject fp_name="/stimulus/u0/to_vld" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">to_vld</obj_property>
+            <obj_property name="ObjectShortName">to_vld</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#ffff00</obj_property>
+         </wvobject>
+         <wvobject fp_name="/stimulus/u0/to_data" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">to_data[31:0]</obj_property>
+            <obj_property name="ObjectShortName">to_data[31:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#ffff00</obj_property>
+         </wvobject>
+         <wvobject fp_name="/stimulus/u0/to_num" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">to_num[3:0]</obj_property>
+            <obj_property name="ObjectShortName">to_num[3:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#ffff00</obj_property>
+         </wvobject>
+         <wvobject fp_name="/stimulus/u0/ram_wdata" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">ram_wdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">ram_wdata[31:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#ffa500</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group285" type="group">
+         <obj_property name="label">4</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/stimulus/u0/go_vld" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">go_vld</obj_property>
+            <obj_property name="ObjectShortName">go_vld</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#00ffff</obj_property>
+         </wvobject>
+         <wvobject fp_name="/stimulus/u0/go_num" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">go_num[3:0]</obj_property>
+            <obj_property name="ObjectShortName">go_num[3:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#00ffff</obj_property>
+         </wvobject>
+         <wvobject fp_name="/stimulus/u0/go_data" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">go_data[31:0]</obj_property>
+            <obj_property name="ObjectShortName">go_data[31:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#00ffff</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>
