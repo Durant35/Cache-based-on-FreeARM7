@@ -27,11 +27,11 @@
 
 ## 内容
 ##### 　　FreeARM7系统结构
-<center><img src="/FreeARM7_Architecture.png" width="800px"></center>
+<center><img src="/FreeARM7_Architecture.png"/></center>
 ##### 　　编译器工作流程简图
-<center><img src="/Compiler_routine.png" width="800px"></center>
+<center><img src="/Compiler_routine.png" width="600px"/></center>
 ##### 　　代码流图
-<center><img src="/Flow_Chart.png" width="800px"></center>
+<center><img src="/Flow_Chart.png"/></center>
 ##### 　　Cache映射规则
 + 直接映射规则，即对于内存中的任何一个数据，在 Cache 中有且只有一个块与之对应。实现中即是，对于一个内存地址，只对应于一个 Cache 索引。  
 <center><img src="/直接相联映射.png" width="500px"></center>
