@@ -26,29 +26,35 @@
 	└── 12353022_陈胜杰_Cache.pdf		详细的试验实验报告
 
 ## 内容
-##### 　　FreeARM7系统结构
-<center><img src="/FreeARM7_Architecture.png"/></center>
-##### 　　编译器工作流程简图
-<img src="/Compiler_routine.png" style="text-align:center" width="600px"/>
-##### 　　代码流图
-<center><img src="/Flow_Chart.png"/></center>
-##### 　　Cache映射规则
+### FreeARM7系统结构
+<p align="center"><img src=".readme/FreeARM7_Architecture.png"/></p>
+
+### 编译器工作流程简图
+<p align="center"><img src=".readme/Compiler_routine.png" style="text-align:center" width="600px"/></p>
+
+### 代码流图
+<p align="center"><img src=".readme/Flow_Chart.png"/></p>
+
+### Cache映射规则
 + 直接映射规则，即对于内存中的任何一个数据，在 Cache 中有且只有一个块与之对应。实现中即是，对于一个内存地址，只对应于一个 Cache 索引。  
-<img src="/直接相联映射.png" style="text-align:center" width="500px"/>
+<p align="center"><img src=".readme/直接相联映射.png" style="text-align:center" width="500px"/></p>
+
 + 全相联，对于内存中的一个地址，对应于 Cache 中的任何一个位置，类似于将内存中的数据直接搬入 Cache，而 Cache 作为一个中转站。  
-<center><img src="/全相联映射.png" width="500px"/></center>
+<p align="center"><img src=".readme/全相联映射.png" width="500px"/></p>
+
 + 组相联映射，结合了上述两种映射规则，一个内存地址索引到 Cache 的一个组，这里是直接映射；而具体到一个组的哪一个块则采用全相联的方式。  
-<center><img src="/二路组相联映射.png" width="500px"/></center>
+<p align="center"><img src=".readme/二路组相联映射.png" width="500px"/></p>
+
 + 直接映射规则能够高效进行内存与 Cache 间数据的转移以及地址的转换， 而全相联则能提供一个较高的命中率。组相联映射，折中了二者的优点。
-#### 　　Cache替换策略
-　　当 Cache 缺失，而缺失所在块(组)存在数据，我们需要一定策略选择一个替换块来存放我们从主存中载入的数据，以使我们在未来的指令操作中，竟可能减 Cache 缺失的可能。 
- 
+
+### Cache替换策略
+　当 Cache 缺失，而缺失所在块(组)存在数据，我们需要一定策略选择一个替换块来存放我们从主存中载入的数据，以使我们在未来的指令操作中，竟可能减 Cache 缺失的可能。 
 + FIFO，先到先置换算法，在一开始我们实现的直接相连映射下的覆盖方式类似于这种方法；
 + 随机算法，即随机置换一个块；
 + 最近最少使用算法(LRU)，这一算法运用了程序时间局部性的原理，在置换的时候，选择组中最近不怎么使用的块，将其置换，可以竟可能达到满意的命中率。
-#### 　　D-Cache写策略
-　　对于 D_Cache 的写操作，有两种比较常见的策略：
 
+### D-Cache写策略
+　对于 D_Cache 的写操作，有两种比较常见的策略：
 + 写直达法，即向 D-Cache 写入数据时，直接将数据写入主存， 同时采用写不分配法， 写数据的时候不将写缺失块载入 Cache， 等到读缺失时再将其载入；
 + 写回法，向 D-Cache 写入数据时，采用写分配法，为其在 Cache 中分配空间，直接在 Cache 中写入数据，当其需要被置换时，再将其写入主存；
 + 这两种方法都能保持 Cache 与主存的一致性。
